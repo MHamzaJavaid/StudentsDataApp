@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Microsoft.AspNetCore.Mvc;
+using StudentsDataApp.Models;
 
-namespace StudentsDataApp
+namespace StudentsDataApp.DAL
 {
     public class StudentDataAccessLayer
     {
         string cs = ConnectionString.dbcs;
 
+        [Obsolete]
         public List<Students> GetAllStudents()
         {
             List<Students> studList = new List<Students>();

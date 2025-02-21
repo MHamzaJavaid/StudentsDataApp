@@ -1,4 +1,4 @@
-﻿namespace StudentsDataApp
+﻿namespace StudentsDataApp.Models
 {
     public class Students
     {
